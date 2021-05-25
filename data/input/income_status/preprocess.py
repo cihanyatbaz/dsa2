@@ -52,7 +52,7 @@ def pd_normalize_quantile(df, col=['age', 'final_weight', 'capital-gain', 'capit
   sparse_col         = pars.get('colsparse', ['capital-gain', 'capital-loss'] )
 
 
-  # Find IQR and implement to numericals and sparse columns seperately
+  # Find IQR and implement to numerical and sparse columns separately
   Q1  = df.quantile(0.25)
   Q3  = df.quantile(0.75)
   IQR = Q3 - Q1
